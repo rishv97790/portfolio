@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Alex - Photography Portfolio</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- Add your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Add Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: aqua; font-size: xx-large;">Ravinder</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content (Homepage) -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left-aligned main content -->
+            <div class="col-lg-6 mt-5 text-white">
+                <h1>Welcome to Ravinder Photography Portfolio</h1>
+                <p>Explore the beauty captured through my lens.</p>
+            </div>
+            
+            <!-- Right-aligned oval section with person image slider -->
+            <div class="col-lg-6 mt-3 mt-lg-0">
+                <div class="person-image-slider">
+                    <!-- Add your person images here -->
+                    <div><img src="images/imgA.jpg" alt="Person Image 1" style="height: 400px; width: 100%;"></div>
+                    <div><img src="images/imgB.jpg" alt="Person Image 2" style="height: 400px; width: 100%;"></div>
+                    <div><img src="images/imgC.jpg" alt="Person Image 3" style="height: 400px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 text-center mt-auto fixed-bottom">
+    <div class="container">
+        <div class="social-icons" style="float: right;">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="mt-4">
+        <p>Email Address: rishv97790@gmail.com</p>
+        <p>Phone: +14376555558</p>
+        <p>&copy; 2023 ravinder. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+    <!-- Add Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!-- Add your custom JavaScript file -->
+    <script src="js/script.js"></script>
+
+    <script>
+        // Initialize Slick Carousel for person image slider
+        $(document).ready(function () {
+            $('.person-image-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+            });
+        });
+    </script>
+
+</body>
+
+</html>

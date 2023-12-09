@@ -1,0 +1,13 @@
+
+.navbar-nav .nav-item .nav-link {
+    color: aqua;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: lime;
+}
+
+body {
+    background: linear-gradient(to top, aqua, navy);
+    height: 900px;
+}
